@@ -4,16 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <title>checkpoint gomycode</title>
 </head>
 <body>
   <header>
-    <div>
-    <img src="gomycode.png"  width="75PX" height="70px"  alt="image de gomycode">
+    <div class="img-header">
+    <img src="data:image/png;base64,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"    alt="image de gomycode">
     <h1>bienvenue</h1>
   </div>
 
-      <nav>
+      <nav class="header-nav">
         <li>
           <a href="#">Home</a>
         </li>
@@ -31,18 +35,24 @@
         
       </nav>
   </header>
+  
+    <!--section principale recouvre tous les sections-->
+    
   <section class="main">
-    <section>
+    <h4>Une petite video de présentation</h4>
+    <iframe width="100%"  height="500" src="https://www.youtube.com/embed/-OmuP6t9Rjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+    
+    <section class="About"> 
     <a name="aboutus"><h3 name="aboutus">ABOUT US</h3></a>
      <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis praesentium, quam rerum, qui veniam totam quod est illo, dolorem reprehenderit enim! Laboriosam corrupti repellendus veniam ratione vero, magni ad.
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit soluta ipsum recusandae quidem, asperiores vitae obcaecati? Veniam optio molestiae accusamus iste ipsa cumque molestias asperiores laboriosam, ex, eveniet architecto aliquam.
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem enim officiis, provident nesciunt voluptas fuga odit? Dicta labore ullam sunt voluptates aspernatur, atque voluptatibus, vitae fugit earum, nulla quae voluptatum?
     </p>
-    <h4>Une petite video de présentation</h4>
-    <iframe width="100%"  height="500" src="https://www.youtube.com/embed/-OmuP6t9Rjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+   
     </section>
-        <section>
+      <!--partie a propos du travaille-->
+        <section class="About">
          
           <a name="work"><h3 >WORK</h3></a>
           <p>
@@ -54,7 +64,9 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere fuga, ipsum tempora magni corrupti incidunt dolores sapiente suscipit quis inventore consequatur perferendis laboriosam nobis laudantium et, ipsam cum! Explicabo, impedit.
           </p>
         </section>
-          <section>
+        <!--partie resume-->
+        
+          <section class="About">
             <a name="resume"><h3>RESUME</h3></a>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam porro neque vel reiciendis aliquid, placeat delectus possimus rerum facilis accusantium, totam sit earum corporis? Ut ex at suscipit recusandae placeat!
@@ -65,41 +77,48 @@
 
           </p>
           </section>
+         
           <hr>
-            <section>
-              <form action="">
-                <a name=""></a><h3>NOUS CONTACTER</h3>
-                <div>
-                  <label for="name">Prenom et nom</label>
-                  <input type="text" id="name" name="name" placeholder="nom et prenom">
-                </div>
-                <div>
-                  <label for="email"> E-mail</label>
-                  <input type="email" id="email" name="email" placeholder="exemple@gmail.com">
-                </div>
-                <div>
-                  <label for="pass">mot de passe</label>
-                  <input type="password" id="pass" name="mot de passe">
-                </div>
-                <div>
-                  <label for="age">age</label>
-                  <input type="number" id="age" name="age">
-                </div>
-                <div>
-                  <label for="tel-number">Telephone</label>
-                  <input type="tel" id="tel-number" name="telephone">
-                </div>
-                <button type="submit">soumettre</button>
-                <button type="reset">annuler</button><br>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-              </form>
-            </section>
+          <!--partie formulaire-->
+          
+              <form >
+              <div class="left-side">
+                <a name="contact"><h3>NOUS CONTACTER</h3></a>
+                  <div class="champs">
+                    <label for="name">Prenom et nom</label>
+                    <input type="text" id="name" name="name" placeholder="nom et prenom">
+                  </div>
+                  <div class="champs">
+                      <label for="email"> E-mail</label>
+                      <input type="email" id="email" name="email" placeholder="exemple@gmail.com">
+                  </div>
+                  <div class="champs">
+                      <label for="pass">mot de passe</label>
+                      <input type="password" id="pass" name="mot de passe">
+                  </div>
+                  <div class="champs">
+                      <label for="age">age</label>
+                      <input type="number" id="age" name="age">
+                  </div>
+                  <div class="champs">
+                        <label for="tel-number">Telephone</label>
+                        <input type="tel" id="tel-number" name="telephone">
+                      </div>
+                </div>             
+                                    <div class="right-side">
+                                    <textarea name="" id="" cols="100%" rows="10" placeholder="Ecrire ici votre commentaire"></textarea>
+                                    <button type="submit">soumettre</button>
+                                    <button type="reset">annuler</button><br>
+                                    </div>
+                </form>
+              
+</section>
 
-  </section>
-  <hr>
   <footer>
-    <address>Cité Alioune sow villa numéro 101</address><br>
+
+   <marquee behavior="" direction=""> <address>Cité Alioune sow villa numéro 101<br> Telephone:77 458 01 10</address><br></marquee>
     copyright &copy;khadim gning 2022
   </footer>
+  
 </body>
 </html>
