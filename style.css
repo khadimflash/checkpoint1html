@@ -7,11 +7,17 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 /*stilysation du header et de la header nav*/
+*{
+    box-sizing: border-box;
+}
 header{
    
     background-color:#000;
+    background-image: linear-gradient(to right,black,red,black);
+    opacity: 0.90;
     color: #fff;
     align-items: center;
+    
     
     
 }
@@ -70,7 +76,8 @@ section.main >h4{
     font-size: 3vw;
     text-align: center;
     text-decoration: underline;
- 
+    background-color: #fff;
+
     
 }
 section.main section.About >a >h3{
@@ -102,9 +109,15 @@ form div.left-side a{
     color: white;
 
 }
+#separation{
+    border-bottom: 3px solid white;
+    margin-right: 10px;
+
+   
+}
 form div.left-side div.champs {
     display: inline;
-    padding-top: 12px;
+    padding-top: 15px;
 }
 form div.left-side div.champs label[for="name"],label[for="email"],label[for="pass"],label[for="age"],label[for="tel-number"]{
     display: block;
@@ -117,7 +130,9 @@ form div.left-side div.champs label[for="name"],label[for="email"],label[for="pa
 form div.left-side div.champs input[type="text"],input[type="email"],input[type="number"],input[type="password"],input[type="tel"]{
     width: 90%;
     height: 50px;
+    padding: 20px;
     border-radius: 10px;
+   
     
 }
 form div.right-side{
@@ -126,6 +141,7 @@ form div.right-side{
 }
 form div.right-side textarea{
     display: block;
+    
     width: 90%;
     border-radius: 10px ;
 }
@@ -133,6 +149,12 @@ form div.right-side button{
     margin-top: 10px;
     margin-right: 10px;
     padding: 10px;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
     
    
 }
@@ -144,6 +166,9 @@ form div.right-side button[type="submit"],button[type="reset"]{
     font-weight: 700;
     width: 50%;
     
+    
+   
+    
 }
 form div.right-side button:hover{
     cursor: pointer;
@@ -152,6 +177,8 @@ form div.right-side button:hover{
 /*partie fotter*/
 footer{
     background-color: #000;
+    background-image: linear-gradient(to top right ,black,red,black);
+    font-weight: bold;
     color: white;
     text-align: center;
     margin-top: 0;
